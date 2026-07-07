@@ -21,7 +21,7 @@ sau_cannon.order = "z-sau-cannon"
 -- =========================================================
 local sau_vehicle = util.table.deepcopy(data.raw["car"]["tank"])
 sau_vehicle.name = "sau-artillery"
-sau_vehicle.icon = "__base__/graphics/icons/tank.png"
+sau_vehicle.icon = "__sau-artillery__/graphics/icons/sau-artillery.png"
 sau_vehicle.icon_size = 64
 sau_vehicle.minable = {mining_time = 2, result = "sau-artillery"}
 sau_vehicle.max_health = 700           -- чуть хрупче танка -- это машина поддержки, не штурмовая
@@ -48,7 +48,7 @@ data:extend({
   {
     type = "item-with-entity-data",
     name = "sau-artillery",
-    icon = "__base__/graphics/icons/tank.png",
+    icon = "__sau-artillery__/graphics/icons/sau-artillery.png",
     icon_size = 64,
     subgroup = "transport",
     order = "z-sau-artillery",
@@ -95,7 +95,7 @@ data:extend({
   {
     type = "technology",
     name = "sau-artillery",
-    icon = "__base__/graphics/technology/artillery.png",
+    icon = "__sau-artillery__/graphics/technology/sau-artillery.png",
     icon_size = 128,
     prerequisites = {"tank", "artillery"},
     unit = {
