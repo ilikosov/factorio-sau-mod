@@ -34,8 +34,8 @@ sau_vehicle.effectivity = 0.7
 sau_vehicle.rotation_speed = 0.0035    -- медленнее разворот, тяжёлая машина
 sau_vehicle.guns = {"sau-cannon"}
 sau_vehicle.equipment_grid = nil       -- убираем броне-сетку танка, у нас другой баланс
--- звук выстрела возьмём от арт-вагона, если он определён в базовой пушке
-sau_vehicle.sound_minimum_speed = sau_vehicle.sound_minimum_speed
+-- звук выстрела не нужно переносить отдельно: он уже часть attack_parameters,
+-- скопированных в sau_cannon вместе с пушкой арт-вагона (см. выше)
 sau_vehicle.order = "z-sau-artillery"
 
 data:extend({sau_cannon})
