@@ -1,0 +1,11 @@
+{
+  "name": "sau-artillery",
+  "version": "0.1.0",
+  "title": "SAU Artillery (Self-Propelled Gun)",
+  "author": "YourNameHere",
+  "contact": "",
+  "homepage": "",
+  "description": "Adds a wheeled self-propelled artillery vehicle (SAU) that fires standard artillery shells.",
+  "factorio_version": "1.1",
+  "dependencies": ["base >= 1.1.0"]
+}
